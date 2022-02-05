@@ -56,7 +56,7 @@ Describe any challenges encountered while building the app.
 ### App Walkthough GIF
 
 
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+<img src="https://i.imgur.com/cCCgHUG.gif" width=250><br>
 
 ### Notes
 Describe any challenges encountered while building the app.
