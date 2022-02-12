@@ -1,18 +1,17 @@
 package com.codepath.qing.flixster;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
 import com.codepath.qing.flixster.adapters.MovieAdapter;
 import com.codepath.qing.flixster.models.Movie;
-import com.facebook.stetho.common.ArrayListAccumulator;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -27,12 +26,12 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String NOW_PLAYING_URL = "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
     public static final String TAG = "MainActivity";
-
     List<Movie> movies;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);//connect with activity_main.xml
         RecyclerView rvMovies = findViewById(R.id.rvMovie);
         movies = new ArrayList<>();
 
